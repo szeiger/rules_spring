@@ -386,6 +386,7 @@ def springboot(
         tags = [],
         testonly = False,
         visibility = None,
+        exec_compatible_with = [],
         exclude = [], # deprecated
         classpath_index = "@rules_spring//springboot:empty.txt", # deprecated
         use_build_dependency_order = True, # deprecated
@@ -659,6 +660,7 @@ def springboot(
         runtime_deps = java_deps,
         tags = tags,
         testonly = testonly,
+        exec_compatible_with = exec_compatible_with,
     )
 
     if bazelrun_script == None:
